@@ -1,0 +1,223 @@
+.header {
+  position: relative;
+  margin-bottom: 30px;
+
+  @media (max-width: $tablet-width-max) {
+    margin-bottom: 401px;
+  }
+
+  @media (max-width: $mobile-width-max) {
+    margin-bottom: 380px;
+  }
+}
+
+.header__wrapper {
+  position: relative;
+  background-color: $color-black;
+  width: 100%;
+  margin-top: -62px;
+  min-height: 825px;
+  background-image: url("../../img/desckbike.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../../img/deskbike@2x.jpg");
+  }
+
+  @media (max-width: $tablet-width-max) {
+    background-image: url("../../img/tablebike.jpg");
+    min-height: 0;
+    height: 340px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/tablebike@2x.jpg");
+    }
+  }
+
+  @media (max-width: $mobile-width-max) {
+    background-image: url("../../img/mobilebike.jpg");
+    height: 390px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/mobilebike@2x.jpg");
+    }
+  }
+}
+
+.header__contain {
+  max-width: 880px;
+  margin: 0 auto;
+  color: $color-white;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 322px;
+
+  @media (max-width: $tablet-width-max) {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-top: 91px;
+  }
+
+  @media (max-width: $mobile-width-max) {
+    padding-top: 76px;
+  }
+}
+
+// .header__logo {
+//   position: absolute;
+//   top: -4px;
+
+//   @media (max-width: $tablet-width-max) {
+//     top: 25px;
+//     left: 22px;
+//   }
+
+//   @media (max-width: $mobile-width-max) {
+//     left: 17px;
+//   }
+// }
+
+.header__promo {
+  max-width: 400px;
+  margin-top: 46px;
+
+  @media (max-width: $tablet-width-max) {
+    max-width: 480px;
+  }
+}
+
+.header__header {
+  font-weight: 700;
+  font-size: 46px;
+  line-height: 64px;
+  letter-spacing: -0.005em;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 24px;
+
+  @media (max-width: $tablet-width-max) {
+    font-size: 30px;
+    line-height: 42px;
+    margin-bottom: 20px;
+  }
+
+  @media (max-width: $mobile-width-max) {
+    min-height: 83px;
+    padding: 0 10px;
+  }
+}
+
+.header__text {
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 32px;
+  letter-spacing: -0.005em;
+  opacity: 0.8;
+  padding: 0;
+  margin: 0;
+
+  @media (max-width: $tablet-width-max) {
+    font-size: 18px;
+  }
+
+  @media (max-width: $mobile-width-max) {
+    padding: 0 10px;
+  }
+}
+
+.header__subheader {
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 28px;
+  letter-spacing: -0.005em;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  margin-bottom: 19px;
+
+  @media (max-width: $tablet-width-max) {
+    color: $color-black;
+    font-size: 18px;
+    margin-top: 149px;
+    margin-bottom: 28px;
+  }
+
+  @media (max-width: $mobile-width-max) {
+    margin-top: 140px;
+    padding: 0 10px;
+    margin-bottom: 20px;
+  }
+}
+
+.header__application {
+  max-width: 327px;
+}
+
+.header__form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header__feedback {
+  width: 327px;
+  min-height: 45px;
+  background: $color-white;
+  border: 1px solid $color-white-light;
+  border-radius: 6px;
+  font-size: 15px;
+  line-height: 24px;
+  margin-bottom: 20px;
+  padding: 13px 30px 10px 30px;
+  letter-spacing: 0.15px;
+
+  @media (max-width: $tablet-width-max) {
+    width: 321px;
+    padding-left: 22px;
+  }
+
+  @media (max-width: $mobile-width-max) {
+    width: 288px;
+    padding-left: 26px;
+    margin-bottom: 19px;
+  }
+}
+
+.header__feedback::placeholder {
+  color: $color-black-light;
+  opacity: 0.5;
+}
+
+.header__button {
+  width: 325px;
+  min-height: 51px;
+  border-radius: 6px;
+  background-color: $color-green;
+  color: $color-black;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 21px;
+  padding: 0;
+  border: none;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    background-color: $color-green-focus;
+  }
+
+  &:active {
+    opacity: 0.9;
+  }
+
+  @media (max-width: $tablet-width-max) {
+    width: 321px;
+  }
+
+  @media (max-width: $mobile-width-max) {
+    width: 286px;
+  }
+}
