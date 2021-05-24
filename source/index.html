@@ -92,8 +92,41 @@
         </div>
       </div>
     </section>
+    <section class="video" id="video">
+      <div class="video__wrapper">
+        <h2 class="video__header">Видео про велосипеды</h2>
+        <p class="video__text">В этом видео мы подробно расскажем про особенности выбора велосипеда для себя.</p>
+        <div class="video__container">
+          <picture>
+            <source media="(max-width: 767px)" srcset="img/mobilevideo.jpg 1x, img/mobilevideo@2x.jpg 2x" width="288" height="162">
+            <source media="(max-width: 1023px)" srcset="img/tabletvideo.jpg 1x, img/tabletvideo@2x.jpg 2x" width="503" height="282">
+            <img class="video__image" src="img/deskvideo@2x.jpg" srcset="img/deskvideo@2x.jpg 2x" alt="Заставка видео о велосипедах" width="929" height="522">
+          </picture>
+          <button class="video__button" type="button"><span class="visually-hidden">Смотреть видео</span></button>
+        </div>
+      </div>
+    </section>
   </main>
-  <footer></footer>
+  <footer class="footer" id="contacts">
+    <div class="footer__content">
+
+    <div class="footer__adress">
+      <h2 class="footer__header">Как нас найти?</h2>
+      <p class="footer__text">Мы находимся по адресу: Санкт-Петербург, ул. Большая Конюшенная, д. 19</p>
+    </div>
+    <div class="footer__map"></div>
+    <div class="footer__contacts">
+      <a class="footer__link" href="mailto:puteshestviemechta@gmail.ru">
+        <svg width="40" height="20"><use xlink:href="img/symbols.svg#icon-envelope"></use></svg>
+        puteshestviemechta@gmail.ru
+      </a>
+      <a class="footer__link" href="tel:849978468446">
+        <svg width="40" height="30"><use xlink:href="img/symbols.svg#icon-phone"></use></svg>
+        +7 (499) -784-684-46
+      </a>
+    </div>
+  </div>
+  </footer>
   <script src="js/script.min.js"></script>
 </body>
 </html>

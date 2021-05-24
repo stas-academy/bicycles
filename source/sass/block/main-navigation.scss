@@ -44,6 +44,15 @@
   @media (max-width: $tablet-width-max) {
     display: block;
   }
+
+  &:hover,
+  &:focus {
+    background-color: $color-green-focus;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
 }
 
 .main-navigation__list {
