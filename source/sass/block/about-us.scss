@@ -5,10 +5,12 @@
 
   @media (max-width: $tablet-width-max) {
     margin-top: 13px;
+    padding-bottom: 50px;
   }
 
   @media (max-width: $mobile-width-max) {
     margin-top: 51px;
+    padding-bottom: 60px;
   }
 }
 

@@ -2,6 +2,15 @@
   position: relative;
   background-color: $color-grey-white;
   padding: 120px 10px 115px 10px;
+
+  @media (max-width: $tablet-width-max) {
+    padding-top: 18px;
+    padding-bottom: 35px;
+  }
+
+  @media (max-width: $mobile-width-max) {
+    padding: 18px 0 22px 0;
+  }
 }
 
 .types__wrapper {
@@ -12,6 +21,11 @@
   margin: 0 auto;
   margin-left: 40px;
   margin-right: 40px;
+
+  @media (max-width: $mobile-width-max) {
+    margin-left: 0;
+    margin-right: 0;
+  }
 }
 
 .types__header {
@@ -25,11 +39,21 @@
   text-align: center;
   margin-bottom: 51px;
   margin-top: 32px;
+
+  @media (max-width: $tablet-width-max) {
+    font-size: 24px;
+    line-height: 41px;
+    margin-bottom: 29px;
+  }
 }
 
 .types__item {
   position: relative;
   margin: 0 25px 35px 25px;
+
+  @media (max-width: $mobile-width-max) {
+    margin: 0 10px 35px 10px;
+  }
 
   &:nth-of-type(3n+1) {
     margin-top: 8px;
@@ -44,6 +68,28 @@
       background-color: transparent;
       border: 27px solid $color-green;
       border-radius: 50%;
+
+      @media (max-width: $tablet-width-max) {
+        border: 20px solid $color-green;
+        width: 86px;
+        height: 86px;
+        top: 202px;
+        left: -36px;
+      }
+
+      @media (max-width: $mobile-width-max) {
+        top: 203px;
+        left: -23px;
+      }
+    }
+
+    @media (max-width: $tablet-width-max) {
+      margin-top: 0;
+      margin-bottom: 50px;
+    }
+
+    @media (max-width: $mobile-width-max) {
+      margin-bottom: 47px;
     }
   }
 
@@ -59,6 +105,10 @@
       background-color: transparent;
       border: 8px solid $color-green;
       z-index: 3;
+
+      @media (max-width: $tablet-width-max) {
+        display: none;
+      }
     }
 
     &::before {
@@ -69,6 +119,10 @@
     &::after {
       bottom: 32px;
       right: -23px;
+    }
+
+    @media (max-width: $tablet-width-max) {
+      margin-top: 0;
     }
   }
 
@@ -84,6 +138,19 @@
       background-color: transparent;
       border: 17px solid $color-green;
       z-index: 2;
+
+      @media (max-width: $tablet-width-max) {
+        border: 13px solid $color-green;
+        width: 42px;
+        height: 42px;
+        top: -20px;
+        right: -25px;
+      }
+
+      @media (max-width: $mobile-width-max) {
+        top: -17px;
+        right: -14px;
+      }
     }
   }
 }
