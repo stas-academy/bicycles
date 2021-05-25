@@ -193,10 +193,15 @@
   &:hover,
   &:focus {
     background-color: $color-green-focus;
+    transition: 0.7s;
   }
 
   &:active {
     opacity: 0.9;
+  }
+
+  &:not(:hover) {
+    transition: 0.7s;
   }
 
   @media (max-width: $tablet-width-max) {
