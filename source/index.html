@@ -4,8 +4,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="preload" href="fonts/open-sans-v18-latin_cyrillic-600.woff2" as="font">
+  <meta name="description" content="Магазин велосипедов Moon">
   <link rel="preload" href="fonts/open-sans-v18-latin_cyrillic-regular.woff2" as="font">
+  <link rel="preload" href="fonts/open-sans-v18-latin_cyrillic-300.woff2" as="font">
+  <link rel="preload" href="fonts/open-sans-v18-latin_cyrillic-600.woff2" as="font">
+  <link rel="preload" href="fonts/open-sans-v18-latin_cyrillic-700.woff2" as="font">
   <title>bicycles</title>
   <link rel="stylesheet" href="css/style.min.css">
 </head>
@@ -68,6 +71,10 @@
         <div class="types__item">
           <div class="types__image">
             <picture>
+              <source type="image/webp" media="(max-width:1023px)"
+                srcset="img/tabletwaybike.webp 1x, img/tabletwaybike2x.webp 2x">
+              <source type="image/webp"
+                srcset="img/deskwaybike.webp 1x, img/deskwaybike@2x.webp 2x">
               <source media="(max-width: 1023px)" srcset="img/tabletwaybike.jpg 1x, img/tabletwaybike@2x.jpg 2x">
               <img src="img/deskwaybike.jpg" srcset="img/deskwaybike@2x.jpg 2x" alt="Дорожный велосипед" width="342" height="503">
             </picture>
@@ -77,6 +84,10 @@
         <div class="types__item">
           <div class="types__image">
             <picture>
+              <source type="image/webp" media="(max-width:1023px)"
+                srcset="img/tabletmountainbike.webp 1x, img/tabletmountainbike2x.webp 2x">
+              <source type="image/webp"
+                srcset="img/deskmountainbike.webp 1x, img/deskmountainbike@2x.webp 2x">
               <source media="(max-width: 1023px)" srcset="img/tabletmountainbike.jpg 1x, img/tabletmountainbike@2x.jpg 2x">
               <img src="img/deskmountainbike.jpg" srcset="img/deskmountainbike@2x.jpg 2x" alt="Горный велосипед" width="342" height="566">
             </picture>
@@ -86,6 +97,10 @@
         <div class="types__item">
           <div class="types__image">
             <picture>
+              <source type="image/webp" media="(max-width:1023px)"
+                srcset="img/tabletchildbike.webp 1x, img/tabletchildbike2x.webp 2x">
+              <source type="image/webp"
+                srcset="img/deskchildbike.webp 1x, img/deskchildbike@2x.webp 2x">
               <source media="(max-width: 1023px)" srcset="img/tabletchildbike.jpg 1x, img/tabletchildbike@2x.jpg 2x">
               <img src="img/deskchildbike.jpg" srcset="img/deskchildbike@2x.jpg 2x" alt="Детский велосипед" width="342" height="513">
             </picture>
