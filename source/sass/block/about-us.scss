@@ -14,7 +14,7 @@
   }
 }
 
-.about-us__header {
+.about-us h2 {
   font-weight: 600;
   font-size: 30px;
   line-height: 30px;
@@ -35,7 +35,7 @@
   }
 }
 
-.about-us__list {
+.about-us ul {
   list-style: none;
   display: flex;
   justify-content: center;
@@ -45,7 +45,7 @@
   margin: 0;
 }
 
-.about-us__item {
+.about-us li {
   width: 263px;
   font-weight: 400;
   font-size: 22px;

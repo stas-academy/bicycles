@@ -25,7 +25,7 @@
 }
 
 
-.video__header {
+.video__wrapper h2 {
   padding: 0;
   margin: 0;
   font-weight: 600;
@@ -45,7 +45,7 @@
   }
 }
 
-.video__text {
+.video__wrapper p {
   padding: 0;
   margin: 0 auto;
   font-weight: 300;
@@ -72,7 +72,7 @@
   position: relative;
 }
 
-.video__image {
+.video__container img {
   cursor: pointer;
 
   @media (max-width: $tablet-width-max) {
@@ -91,7 +91,7 @@
   }
 }
 
-.video__button {
+.video__container button {
   position: absolute;
   top: 50%;
   left: 50%;
