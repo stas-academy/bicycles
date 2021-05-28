@@ -159,6 +159,7 @@
   margin-bottom: 20px;
   padding: 13px 30px 10px 30px;
   letter-spacing: 0.15px;
+  cursor: pointer;
 
   @media (max-width: $tablet-width-max) {
     width: 321px;
@@ -169,6 +170,11 @@
     width: 288px;
     padding-left: 26px;
     margin-bottom: 19px;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: $color-grey-white;
   }
 }
 

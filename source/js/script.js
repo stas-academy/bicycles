@@ -24,5 +24,4 @@ try {
   storage = navigation();
 }catch (err){
   isStorage = false;
-  // console.log("Ошибка, код выполняется!");
 }
