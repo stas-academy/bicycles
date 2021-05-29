@@ -17,31 +17,31 @@
   width: 100%;
   margin-top: -62px;
   min-height: 825px;
-  background-image: url("../../img/desckbike.jpg");
+  background-image: url("../img/desckbike.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
 
   @media (min-resolution: 2dppx) {
-    background-image: url("../../img/deskbike@2x.jpg");
+    background-image: url("../img/deskbike@2x.jpg");
   }
 
   @media (max-width: $tablet-width-max) {
-    background-image: url("../../img/tablebike.jpg");
+    background-image: url("../img/tablebike.jpg");
     min-height: 0;
     height: 340px;
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../../img/tablebike@2x.jpg");
+      background-image: url("../img/tablebike@2x.jpg");
     }
   }
 
   @media (max-width: $mobile-width-max) {
-    background-image: url("../../img/mobilebike.jpg");
+    background-image: url("../img/mobilebike.jpg");
     height: 390px;
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../../img/mobilebike@2x.jpg");
+      background-image: url("../img/mobilebike@2x.jpg");
     }
   }
 }

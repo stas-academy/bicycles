@@ -64,29 +64,29 @@
 .footer__map {
   height: 530px;
   background-color: $color-grey-dark;
-  background-image: url("../../img/deskmap.jpg");
+  background-image: url("../img/deskmap.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
   margin-bottom: 35px;
 
   @media (min-resolution: 2dppx) {
-    background-image: url("../../img/deskmap@2x.jpg");
+    background-image: url("../img/deskmap@2x.jpg");
   }
 
   @media (max-width: $tablet-width-max) {
-    background-image: url("../../img/tabletmap.jpg");
+    background-image: url("../img/tabletmap.jpg");
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../../img/tabletmap@2x.jpg");
+      background-image: url("../img/tabletmap@2x.jpg");
     }
   }
 
   @media (max-width: $mobile-width-max) {
-    background-image: url("../../img/mobilemap.jpg");
+    background-image: url("../img/mobilemap.jpg");
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../../img/mobilemap@2x.jpg");
+      background-image: url("../img/mobilemap@2x.jpg");
     }
   }
 

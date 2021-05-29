@@ -64,6 +64,11 @@
 
 .main-navigation li {
   margin: 0 4px;
+  // margin-right: 133px;
+
+  // &:nth-of-type(3n+4) {
+  //   margin-right: 0;
+  // }
 
   @media (max-width: $tablet-width-max) {
     display: flex;
@@ -196,7 +201,6 @@
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  background-color: $color-white;
   min-height: 568px;
 }
 
