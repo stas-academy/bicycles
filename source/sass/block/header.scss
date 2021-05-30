@@ -15,7 +15,6 @@
   position: relative;
   background-color: $color-black;
   width: 100%;
-  margin-top: -62px;
   min-height: 825px;
   background-image: url("../img/desckbike.jpg");
   background-size: cover;
@@ -52,17 +51,17 @@
   color: $color-white;
   display: flex;
   justify-content: space-between;
-  padding-top: 322px;
+  padding-top: 261px;
 
   @media (max-width: $tablet-width-max) {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    padding-top: 91px;
+    padding-top: 29px;
   }
 
   @media (max-width: $mobile-width-max) {
-    padding-top: 76px;
+    padding-top: 15px;
   }
 }
 
@@ -72,6 +71,7 @@
 
   @media (max-width: $tablet-width-max) {
     max-width: 480px;
+    margin-top: 7px;
   }
 }
 

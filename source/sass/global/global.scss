@@ -18,6 +18,10 @@ body {
   min-width: 320px;
 }
 
+.page--no-scroll {
+  overflow: hidden;
+}
+
 main {
   flex: 1 0 auto;
 }
