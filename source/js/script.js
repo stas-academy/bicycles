@@ -54,3 +54,20 @@ try {
 } catch (err) {
   isStorage = false;
 }
+
+//scroll
+
+const anchors = document.querySelectorAll('a[href*="#"]');
+
+  anchors.forEach(function (anchor) {
+    anchor.addEventListener('click', function (evt) {
+      evt.preventDefault();
+
+      let blockID = anchor.getAttribute('href').substr(1);
+
+      document.getElementById(blockID).scrollIntoView({
+        behavior: 'smooth',
+        block: 'start'
+      });
+    });
+  });
