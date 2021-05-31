@@ -1,14 +1,6 @@
 .header {
   position: relative;
   margin-bottom: 30px;
-
-  @media (max-width: $tablet-width-max) {
-    margin-bottom: 401px;
-  }
-
-  @media (max-width: $mobile-width-max) {
-    margin-bottom: 380px;
-  }
 }
 
 .header__wrapper {
@@ -26,22 +18,8 @@
   }
 
   @media (max-width: $tablet-width-max) {
-    background-image: url("../img/tablebike.jpg");
+    background: none;
     min-height: 0;
-    height: 340px;
-
-    @media (min-resolution: 2dppx) {
-      background-image: url("../img/tablebike@2x.jpg");
-    }
-  }
-
-  @media (max-width: $mobile-width-max) {
-    background-image: url("../img/mobilebike.jpg");
-    height: 390px;
-
-    @media (min-resolution: 2dppx) {
-      background-image: url("../img/mobilebike@2x.jpg");
-    }
   }
 }
 
@@ -57,11 +35,39 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
-    padding-top: 29px;
+    padding-top: 0;
+    max-width: 100%;
+  }
+}
+
+.header__bike {
+  @media (max-width: $tablet-width-max) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: $color-black;
+    background-image: url("../img/tablebike.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    min-height: 340px;
+    padding: 25px 21px;
+    width: 100%;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/tablebike@2x.jpg");
+    }
   }
 
   @media (max-width: $mobile-width-max) {
-    padding-top: 15px;
+    background-image: url("../img/mobilebike.jpg");
+    min-height: 390px;
+    padding: 25px 18px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/mobilebike@2x.jpg");
+    }
   }
 }
 
@@ -71,7 +77,7 @@
 
   @media (max-width: $tablet-width-max) {
     max-width: 480px;
-    margin-top: 7px;
+    margin-top: 56px;
   }
 }
 
@@ -127,12 +133,12 @@
   @media (max-width: $tablet-width-max) {
     color: $color-black;
     font-size: 18px;
-    margin-top: 149px;
+    margin-top: 70px;
     margin-bottom: 28px;
   }
 
   @media (max-width: $mobile-width-max) {
-    margin-top: 140px;
+    margin-top: 70px;
     padding: 0 10px;
     margin-bottom: 20px;
   }

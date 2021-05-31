@@ -1,15 +1,16 @@
 .video {
   background-color: $color-black-night;
-  max-height: 706px;
+  min-height: 706px;
   margin-bottom: 98px;
+  padding-bottom: 1px;
 
   @media (max-width: $tablet-width-max) {
-    max-height: 413px;
+    min-height: 413px;
     margin-bottom: 85px;
   }
 
   @media (max-width: $mobile-width-max) {
-    max-height: 384px;
+    min-height: 384px;
     margin-bottom: 49px;
   }
 }
@@ -31,7 +32,7 @@
   font-size: 30px;
   line-height: 30px;
   letter-spacing: -0.005em;
-  padding-top: 120px;
+  padding-top: 118px;
   padding-bottom: 20px;
 
   @media (max-width: $tablet-width-max) {
@@ -54,15 +55,11 @@
   letter-spacing: -0.005em;
   opacity: 0.5;
   padding-bottom: 56px;
-  max-width: 929px;
+  max-width: 340px;
 
   @media (max-width: $tablet-width-max) {
     max-width: 440px;
     padding-bottom: 40px;
-
-    br {
-      display: none;
-    }
   }
 
   @media (max-width: $mobile-width-max) {
@@ -72,6 +69,7 @@
 
 .video__container {
   position: relative;
+  margin-bottom: -100px;
 }
 
 .video__container img {
