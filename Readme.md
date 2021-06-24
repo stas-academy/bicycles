@@ -1,5 +1,7 @@
 * Разработано: [Станислав Гайворонский](https://up.htmlacademy.ru/adaptive/21/user/1572221).
 
+на сайт : https://stas-academy.github.io/bicycles/build/
+
 # Gulp template Liga A
 ## Краткая инструкция по работе
 ### Для начала работы у вас должент быть установлен:
